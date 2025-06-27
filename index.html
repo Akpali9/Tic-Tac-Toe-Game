@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TIC TAC TOE</h1>
+        
+        <div class="mode-selector">
+            <button class="mode-btn active" id="pvpBtn">Player vs Player</button>
+            <button class="mode-btn" id="pvcBtn">Player vs Computer</button>
+        </div>
+        
+        <div class="game-info">
+            <div class="player-turn">
+                Current Player: <span class="player-x" id="currentPlayer">X</span>
+            </div>
+            <div class="scores">
+                <div class="score-box">
+                    <div class="score-label">Player X</div>
+                    <div class="score-value" id="scoreX">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">Draws</div>
+                    <div class="score-value" id="scoreDraw">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">Player O</div>
+                    <div class="score-value" id="scoreO">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="difficulty" id="difficultyContainer" style="display: none;">
+            <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+        
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="resetBtn">New Game</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+        
+        <div class="message" id="message">
+            Player X's turn
+        </div>
+        
+        <div class="footer">
+            Made with <i class="fas fa-heart" style="color: #ff4d4d;"></i> | Classic Tic Tac Toe
+        </div>
+    </div>
+
+    <script src="script.js">
+</script>
+</body>
+</html>
